@@ -9,7 +9,7 @@
   <body class="text-gray-500">
 
     <div class="flex"><!-- CONTENT WRAPPER -->
-      <div>
+      <div class="hidden md:block">
         <nav class="font-chat">
           <div class="container bg-gray-300 w-48 h-screen">
           <div>
@@ -45,13 +45,14 @@
           <a href="#" class="ml-2">Sign up</a>
         </div>
         -->
-      <div class="px-16 py-6">
+      <div class="px-6 py-1 md:px-16 md:py-6">
         <header>
           <h2 class="text-gray-800 text-6xl font-semibold font-heading flex justify-center">SAABI</h2>
           <h3 class="text-gray-700 text-2xl font-chat font-light flex justify-center">Your personal AI</h3>
         </header>
 
-      <div class="font-chat flex justify-center pt-8">
+
+      <div class="font-chat sm:flex justify-center pt-8">
         <div>
           <h4 class="text-gray-800 text-3xl font-semibold mt-5 pb-2 flex justify-center">Examples</h4>
           <div class="text-xl justify-center">
@@ -108,7 +109,19 @@
             </div>
           </div>
         </div>
+
       </div>
+
+      <div>
+        <form id="form" class="flex justify-center pt-4">
+          <textarea class="p-2 m-1 text-lg resize-none flex justify-center items-center bg-gray-400 w-3/4 h-12 rounded-lg border-gray-500 shadow-md" name="prompt" rows="1" cols="1" placeholder="Let me help you...">
+          </textarea>
+          <button type="submit" class="bg-transparent cursor-pointer">
+            <img src="client/assets/icons/send.svg">
+          </button>
+        </form>
+      </div>
+
       </main>
     </div>
 
