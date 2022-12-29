@@ -1,10 +1,9 @@
 {
   "name": "asksaabi",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+    "build-css": "tailwindcss build D:/AskSAABI/src/styles.css -o D:/AskSAABI/client/output.css"
   },
   "repository": {
     "type": "git",
@@ -19,5 +18,7 @@
   "homepage": "https://github.com/Saabitra/AskSAABI#readme",
   "dependencies": {
     "tailwindcss": "^3.2.4"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
