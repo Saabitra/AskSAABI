@@ -2,8 +2,13 @@ module.exports = {
     _content: [
         './client/public/*.{html,js}',
         './server/*.{html,js}',
-        ''
+        '../node_modules/flowbite/**/*.js'
     ],
+
+    plugins: [
+        require('flowbite/plugin')
+    ],
+
     theme: {
         extend: {
             fontFamily: {
