@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SAABI</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.ico"/>
     <link rel="stylesheet" href="../public/output.css" />
     <script src="../../node_modules/flowbite/dist/flowbite.js"></script>
   </head>
   <body class="">
-
+    <script type="module" src="../script.js">
+      var form = document.getElementById("form");
+      form.addEventListener("submit", function(event){
+        event.preventDefault();
+        var prompt = document.getElementsByName("prompt")[0].value;
+        console.log(prompt);
+      })
+    </script>
     <!-- CONTENT WRAPPER -->
     
     <div class="">
