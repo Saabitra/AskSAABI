@@ -1,6 +1,6 @@
 module.exports = {
     _content: [
-        './client/public/*.{html,js}',
+        './client/**/*.{html,js}',
         './server/*.{html,js}',
         '../node_modules/flowbite/**/*.js'
     ],
