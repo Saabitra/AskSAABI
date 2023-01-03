@@ -9,14 +9,6 @@
     <script src="../../node_modules/flowbite/dist/flowbite.js"></script>
   </head>
   <body class="">
-    <script type="module" src="../script.js">
-      var form = document.getElementById("form");
-      form.addEventListener("submit", function(event){
-        event.preventDefault();
-        var prompt = document.getElementsByName("prompt")[0].value;
-        console.log(prompt);
-      })
-    </script>
     <!-- CONTENT WRAPPER -->
     
     <div class="">
@@ -160,6 +152,34 @@
       </div>
     </div>
 
-    <div id="app"></div>
+    <div id="app">
+      <div id="chat_container"></div>
+
+      <form id="form">
+        <textarea name="prompt" rows="1" cols="1" placeholder="Let me help you..."></textarea>
+        <button type="submit"><img src="assets/send.svg"></button>
+        
+      <div class="left">
+        <ul class="nav">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+        </ul>
+      </div>
+
+
+    <script type="module" src="script.js">
+
+      var form = document.getElementById("form");
+
+      form.addEventListener("submit", function(event){
+        event.preventDefault();
+
+        var prompt = document.getElementsByName("prompt")[0].value;
+        console.log(prompt);
+
+      })
+      
+    </script>
+
   </body>
 </html>
