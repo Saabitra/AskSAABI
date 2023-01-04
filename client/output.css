@@ -1071,6 +1071,10 @@ input[type="range"]::-ms-fill-lower{
   clear: none;
 }
 
+.m-auto{
+  margin: auto;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1106,14 +1110,6 @@ input[type="range"]::-ms-fill-lower{
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
 }
 
 .box-border{
@@ -1216,6 +1212,10 @@ input[type="range"]::-ms-fill-lower{
   height: 1rem;
 }
 
+.h-9{
+  height: 2.25rem;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1232,8 +1232,20 @@ input[type="range"]::-ms-fill-lower{
   width: 1rem;
 }
 
+.w-9{
+  width: 2.25rem;
+}
+
 .max-w-screen-md{
   max-width: 768px;
+}
+
+.max-w-7xl{
+  max-width: 80rem;
+}
+
+.flex-1{
+  flex: 1 1 0%;
 }
 
 .flex-shrink{
@@ -2017,6 +2029,10 @@ input[type="range"]::-ms-fill-lower{
   border-radius: 0.25rem;
 }
 
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
 .rounded-t{
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
@@ -2147,13 +2163,23 @@ input[type="range"]::-ms-fill-lower{
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-inherit{
+  background-color: inherit;
+}
+
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-blue-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 100 242 / var(--tw-bg-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-inherit{
-  background-color: inherit;
 }
 
 .decoration-slice{
@@ -2270,6 +2296,10 @@ input[type="range"]::-ms-fill-lower{
   padding: 1rem;
 }
 
+.p-8{
+  padding: 2rem;
+}
+
 .p-10{
   padding: 2.5rem;
 }
@@ -2282,8 +2312,8 @@ input[type="range"]::-ms-fill-lower{
   padding: 0.5rem;
 }
 
-.p-8{
-  padding: 2rem;
+.p-6{
+  padding: 1.5rem;
 }
 
 .py-2\.5{
@@ -2304,11 +2334,6 @@ input[type="range"]::-ms-fill-lower{
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pl-3{
@@ -2337,22 +2362,6 @@ input[type="range"]::-ms-fill-lower{
 
 .pr-3{
   padding-right: 0.75rem;
-}
-
-.pt-6{
-  padding-top: 1.5rem;
-}
-
-.pt-12{
-  padding-top: 3rem;
-}
-
-.pt-1{
-  padding-top: 0.25rem;
-}
-
-.pt-px{
-  padding-top: 1px;
 }
 
 .text-left{
@@ -2432,6 +2441,11 @@ input[type="range"]::-ms-fill-lower{
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold{

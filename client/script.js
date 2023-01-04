@@ -47,15 +47,15 @@ function generateUniqueId() {
 function chatStripe(isAi, value, uniqueId) {
     return (
         `
-        <div class="wrapper ${isAi && 'ai'}">
-            <div class="chat">
-                <div class="profile">
+        <div class="w-full p-6 ${isAi && 'bg-gray-200'}">
+            <div class="w-full max-w-7xl m-auto flex flex-row items-center gap-3">
+                <div class="w-9 h-9 border rounded-md bg-blue-600 flex justify-center items-center">
                     <img 
                       src=${isAi ? bot : user} 
                       alt="${isAi ? 'bot' : 'user'}" 
                     />
                 </div>
-                <div class="message" id=${uniqueId}>${value}</div>
+                <div class="flex flex-1 text-gray-700 font-chat text-md overflow-x-auto whitespace-pre-wrap " id=${uniqueId}>${value}</div>
             </div>
         </div>
     `
@@ -68,7 +68,7 @@ const handleSubmit = async (e) => {
     const data = new FormData(form)
 
     // user's chatstripe
-    chatContainer.innerHTML += chatStripe(false, data.get('search-input'))
+    chatContainer.innerHTML += chatStripe(false, data.get('prompt'))
 
     // to clear the textarea input 
     form.reset()
@@ -92,16 +92,18 @@ const handleSubmit = async (e) => {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            prompt: data.get('search-input')
+            prompt: data.get('prompt')
         })
     })
 
     clearInterval(loadInterval)
-    messageDiv.innerHTML = " "
+    messageDiv.innerHTML = '';
 
     if (response.ok) {
         const data = await response.json();
-        const parsedData = data.bot.trim() // trims any trailing spaces/'\n' 
+        const parsedData = data.bot.trim() // trims any trailing spaces/'\n'
+        
+        console.log({parsedData})
 
         typeText(messageDiv, parsedData)
     } else {

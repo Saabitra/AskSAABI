@@ -15,6 +15,6 @@
     "nodemon": "^2.0.20",
     "openai": "^3.1.0"
   },
-  "devDependencies": {},
+  "main": "server.js",
   "description": ""
 }
