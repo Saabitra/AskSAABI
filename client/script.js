@@ -68,7 +68,7 @@ const handleSubmit = async (e) => {
     const data = new FormData(form)
 
     // user's chatstripe
-    chatContainer.innerHTML += chatStripe(false, data.get('prompt'))
+    chatContainer.innerHTML += chatStripe(false, data.get('search-input'))
 
     // to clear the textarea input 
     form.reset()
@@ -92,7 +92,7 @@ const handleSubmit = async (e) => {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            prompt: data.get('prompt')
+            prompt: data.get('search-input')
         })
     })
 
@@ -118,3 +118,5 @@ form.addEventListener('keyup', (e) => {
         handleSubmit(e)
     }
 })
+
+

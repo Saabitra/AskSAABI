@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build -i ./src/styles.css -o ./client/public/output.css",
-    "watch": "tailwindcss watch -i ./src/styles.css -o ./client/public/output.css --watch"
+    "build-css": "tailwindcss build -i ./src/styles.css -o ./client/output.css",
+    "watch": "tailwindcss watch -i ./src/styles.css -o ./client/output.css --watch"
   },
   "repository": {
     "type": "git",
