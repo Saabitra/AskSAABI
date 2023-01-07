@@ -122,3 +122,19 @@ form.addEventListener('keyup', (e) => {
 })
 
 
+
+var submit_button = document.getElementById("submit_button");
+submit_button.addEventListener("keydown", function(e) {
+    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        validate(e);
+    }
+});
+
+function validate(e) {
+    if (document.getElementById('body_chat').style.display == 'block') {
+        document.getElementById('body_chat').style.display = 'none';
+        document.getElementById('chat_container').style.display = 'block';
+    }
+}
+
+
