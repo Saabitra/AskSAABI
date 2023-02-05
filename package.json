@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Saabitra/AskSAABI#readme",
   "dependencies": {
+    "firebase": "^9.17.1",
     "flowbite": "^1.5.5",
     "tailwindcss": "^3.2.4"
   },
